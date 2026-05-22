@@ -1,0 +1,109 @@
+{% extends "international/base.html" %}
+{% block title %}Horizon Europe – Piliers et Clusters{% endblock %}
+{% block content %}
+<h1>Horizon Europe – Piliers et Clusters</h1>
+
+<div style="background:#f9f9f9; padding:15px; border-left:5px solid #003366; border-radius:8px;">
+  <p>
+    <strong>À propos de Horizon Europe (2021–2027)</strong><br>
+    Horizon Europe est le <strong>programme-cadre de recherche et d’innovation de l’Union européenne</strong>, doté d’un budget de
+    <strong>95,5 milliards d’euros</strong>. Il soutient la recherche scientifique, l’innovation et la coopération internationale à tous les niveaux :
+    chercheurs individuels, équipes de recherche, laboratoires, entreprises et institutions publiques.
+  </p>
+  <p>
+    Le programme est structuré en <strong>trois grands piliers</strong> et un <strong>pilier transversal</strong>, chacun ayant des objectifs spécifiques :
+  </p>
+  <ul>
+    <li><strong>Pilier I – Excellence scientifique</strong> : soutenir la recherche fondamentale et les talents individuels.</li>
+    <li><strong>Pilier II – Défis mondiaux et compétitivité industrielle</strong> : financer la recherche collaborative pour répondre aux grands défis sociétaux.</li>
+    <li><strong>Pilier III – Europe innovante</strong> : transformer les découvertes scientifiques en innovations concrètes.</li>
+    <li><strong>Pilier transversal – Widening Participation & ERA</strong> : renforcer la coopération et la participation à la recherche européenne.</li>
+  </ul>
+</div>
+
+<hr>
+
+{% for pillar in pillars %}
+  <div style="background:white; border:1px solid #ccc; border-radius:8px; margin:20px 0; padding:20px;">
+    <h2>{{ pillar.pillar_code }} — {{ pillar.pillar_name }}</h2>
+    <p><strong>Description :</strong> {{ pillar.description }}</p>
+
+    {% if pillar.pillar_code == "Pillar I" %}
+      <p>
+        Ce pilier soutient les <strong>meilleurs chercheurs et chercheuses</strong> à travers :
+        <ul>
+          <li><strong>ERC (European Research Council)</strong> : projets individuels à fort potentiel scientifique (Starting, Consolidator, Advanced Grants).</li>
+          <li><strong>MSCA (Marie Skłodowska-Curie Actions)</strong> : mobilité internationale, formation et développement de carrière des jeunes chercheurs.</li>
+          <li><strong>Infrastructures de recherche</strong> : plateformes et équipements scientifiques partagés à l’échelle européenne.</li>
+        </ul>
+        <em>Objectif :</em> renforcer l’excellence scientifique européenne et l’attractivité des carrières de recherche.
+      </p>
+    {% endif %}
+
+    {% if pillar.pillar_code == "Pillar II" %}
+      <p>
+        Ce pilier finance des <strong>projets collaboratifs internationaux</strong> réunissant plusieurs partenaires
+        (universités, centres de recherche, PME, collectivités, etc.) pour relever les grands défis sociétaux et technologiques.
+      </p>
+      <p><em>Objectif :</em> soutenir la <strong>transition verte et numérique</strong> et renforcer la compétitivité européenne.</p>
+    {% endif %}
+
+    {% if pillar.pillar_code == "Pillar III" %}
+      <p>
+        Ce pilier vise à favoriser l’<strong>innovation de rupture</strong> et la création d’entreprises à fort potentiel technologique.
+        Il soutient la valorisation de la recherche académique et le transfert vers le marché.
+      </p>
+      <p>
+        Les principaux instruments sont :
+        <ul>
+          <li><strong>EIC (European Innovation Council)</strong> : soutien aux start-ups et projets deep tech à haut risque.</li>
+          <li><strong>EIT (European Institute of Innovation and Technology)</strong> : mise en réseau entre universités, entreprises et centres de recherche.</li>
+        </ul>
+      </p>
+    {% endif %}
+
+    {% if pillar.pillar_code == "Transversal" %}
+      <p>
+        Ce pilier vise à <strong>réduire les écarts</strong> entre les pays européens en matière de recherche et d’innovation.
+        Il renforce la coopération, la mobilité des chercheurs et la gouvernance de l’<strong>Espace Européen de la Recherche (ERA)</strong>.
+      </p>
+    {% endif %}
+
+    {% if pillar.main_programmes %}
+      <h4>Programmes principaux :</h4>
+      <ul>
+        {% for p in pillar.main_programmes %}
+          <li>{{ p }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if pillar.clusters %}
+      <h4>Clusters :</h4>
+      <ul>
+        {% for c in pillar.clusters %}
+          <li><strong>{{ c.cluster_code }}</strong> — {{ c.name }} : {{ c.goal }}</li>
+        {% endfor %}
+      </ul>
+      <p>
+        Chaque cluster regroupe plusieurs <em>Destinations</em> et <em>Topics</em> décrivant les appels à projets précis, publiés sur le
+        <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal" target="_blank">Funding & Tenders Portal</a>.
+      </p>
+    {% endif %}
+  </div>
+{% endfor %}
+
+<hr>
+
+<div style="background:#eef5ff; padding:15px; border-left:5px solid #003366; border-radius:8px;">
+  <h3>Comment participer à un appel Horizon Europe ?</h3>
+  <ul>
+    <li>Identifiez le pilier et le cluster correspondant à votre domaine de recherche.</li>
+    <li>Consultez les appels ouverts sur le
+      <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal" target="_blank">Funding & Tenders Portal</a>.
+    </li>
+    <li>Contactez la <strong>cellule Europe / relations internationales</strong> de votre laboratoire pour obtenir un accompagnement sur la constitution du consortium, la rédaction du projet et la soumission.</li>
+    <li>Anticipez les <strong>deadlines</strong> : certains appels exigent un pré-dépôt (first stage) avant la soumission finale.</li>
+  </ul>
+</div>
+{% endblock %}

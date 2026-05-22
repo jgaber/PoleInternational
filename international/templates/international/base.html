@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}International Pole | FEMTO-ST{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Vertical Menu -->
+        <nav class="sidebar">
+            <div class="brand-header">
+                <a href="/">
+                    <img src="https://www.femto-st.fr/themes/custom/femto/logo.svg" alt="FEMTO-ST Logo" class="brand-logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                
+                <!-- Parent Menu with sub-menu visible -> could be styled as expandable -->
+                <li>
+                    <a href="#" class="nav-parent">EU Research Call</a>
+                    <ul class="sub-menu">
+                        <li><a href="/EU-research-call/">EU Research Call filter</a></li>
+                        <li><a href="{% url 'external_link_info' 'cost-actions' %}">EU COST Actions</a></li>
+                        <li><a href="{% url 'external_link_info' 'eu-funding-portal' %}">EU Funding & Tenders Portal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-parent">CNRS International</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'external_link_info' 'cnrs-call' %}">CNRS Call for Proposals</a></li>
+                        <li><a href="{% url 'external_link_info' 'cooperation-toolkit' %}">International Cooperation Toolkit</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'external_link_info' 'anr-prci' %}">ANR - PRCI</a></li>
+                <li><a href="{% url 'external_link_info' 'campus-france' %}">Campus France - PHC</a></li>
+                <li><a href="{% url 'external_link_info' 'agence-auf' %}">Agence AUF</a></li>
+
+                <li>
+                    <a href="#" class="nav-parent">Master & PhD students</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'external_link_info' 'scholarships' %}">Scholarships</a></li>
+                        <li><a href="{% url 'external_link_info' 'short-term-mobility' %}">Short-term Mobility </a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="/contacts/">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

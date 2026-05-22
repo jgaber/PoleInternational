@@ -1,0 +1,46 @@
+{% extends "international/base.html" %}
+
+{% block title %}{{ data.title }}{% endblock %}
+
+{% block content %}
+<div class="card external-info-card" style="max-width: 800px; margin: 40px auto; padding: 40px; text-align: center; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+    <div class="info-icon" style="font-size: 3rem; color: var(--brand-blue); margin-bottom: 20px;">
+        <i class="fas fa-info-circle"></i>
+    </div>
+    
+    <h1 style="color: var(--brand-blue); margin-bottom: 25px; font-weight: 700;">{{ data.title }}</h1>
+    
+    <div class="description" style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 35px; text-align: justify; padding: 0 20px;">
+        {{ data.description }}
+    </div>
+    
+    <div class="info-note" style="background-color: #f8f9fa; border-left: 4px solid var(--brand-red); padding: 15px; margin-bottom: 35px; text-align: left; font-style: italic; color: #666;">
+        <p><strong>Note:</strong> You are about to leave our portal and visit an external website for more detailed information and applications.</p>
+    </div>
+    
+    <div class="action-buttons" style="display: flex; justify-content: center; gap: 20px;">
+        <a href="javascript:history.back()" class="btn" style="background: #eee; color: #333; padding: 12px 25px;">Back</a>
+        <a href="{{ data.url }}" target="_blank" class="btn" style="padding: 12px 35px; font-weight: 600;">
+            Continue to {{ data.title }} <i class="fas fa-external-link-alt" style="margin-left: 8px;"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+    .external-info-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+        border: 1px solid rgba(0, 102, 179, 0.1);
+        animation: fadeIn 0.6s ease-out;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .external-info-card .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+</style>
+{% endblock %}

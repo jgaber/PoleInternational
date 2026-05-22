@@ -1,0 +1,245 @@
+/* Root Variables - FEMTO-ST Palette */
+:root {
+    --brand-red: #8952A3;
+    --brand-red-light: #a577ba;
+    --sidebar-bg: #212529; /* Dark premium Gray */
+    --sidebar-text: #f8f9fa;
+    --sidebar-hover-bg: #343a40;
+    --bg-light: #f4f6f9;
+    --text-main: #333333;
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --shadow-md: 0 8px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05); /* Enhanced shadow for pop */
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15), 0 8px 10px rgba(0, 0, 0, 0.08); /* Max shadow for hover */
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Structure générale */
+.container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main-content {
+    margin-left: 260px; /* Sidebar width */
+    padding: 40px;
+    background-color: var(--bg-light);
+    flex: 1;
+    min-height: 100vh;
+}
+
+/* Sidebar Branding */
+.brand-header {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.brand-logo {
+    max-width: 180px;
+    height: auto;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+    transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.03);
+}
+
+/* Menu latéral */
+.sidebar {
+    width: 260px;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding-bottom: 30px;
+    box-shadow: var(--shadow-md);
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 4px solid var(--brand-red);
+}
+
+/* Custom Scrollbar for sidebar */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+.sidebar::-webkit-scrollbar-track {
+    background: var(--sidebar-bg);
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background: #495057;
+    border-radius: 4px;
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-red);
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0 15px;
+}
+
+/* Menu Items */
+.sidebar ul li {
+    margin: 4px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: var(--sidebar-text);
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--sidebar-hover-bg);
+    color: #ffffff;
+    border-left: 3px solid var(--brand-red);
+    transform: translateX(4px);
+}
+
+.nav-parent {
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 13px !important;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    color: #adb5bd !important;
+    pointer-events: none; /* Make parents just labels if they don't have links */
+}
+
+/* Sous-menu */
+.sub-menu {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px !important;
+    margin-top: 5px;
+    display: block;
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+
+.sub-menu li {
+    margin-bottom: 2px;
+}
+
+.sub-menu li a {
+    color: #ced4da;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 15px;
+    border-left: none; /* Override parent hover border */
+    position: relative;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.sub-menu li a::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--brand-red);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.sub-menu li a:hover {
+    background-color: rgba(255,255,255,0.05); /* very light transparent hover */
+    color: #ffffff;
+    border-left: none;
+    transform: translateX(4px);
+}
+
+.sub-menu li a:hover::before {
+    transform: scaleY(1);
+}
+
+/* Typography styles inside blocks */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--brand-red);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--brand-red);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--brand-red-light);
+    text-decoration: underline;
+}
+
+/* Base button styles */
+.btn {
+    display: inline-block;
+    background-color: var(--brand-red);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--brand-red-light);
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Card Elements for content blocks */
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 20px;
+    border-top: 4px solid var(--brand-red);
+}
+
+/* Highly Interactive Hover Cards for Lists */
+.hover-card {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, border-color 0.3s ease;
+    border-top: 4px solid transparent; /* Start transparent, show color on hover */
+}
+
+.hover-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-top-color: var(--brand-red);
+    z-index: 10;
+}

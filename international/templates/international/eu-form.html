@@ -1,0 +1,80 @@
+{% extends "international/base.html" %}
+
+{% block title %}EU Research Call{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1 style="margin-bottom: 25px;">EU Research Calls</h1>
+    
+    <!-- Formulaire de recherche amélioré -->
+    <form method="POST" class="filter-form">
+        {% csrf_token %}
+        <div class="search-section" style="margin-bottom: 20px;">
+            <label for="{{ form.search_query.id_for_label }}" style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--brand-blue);">{{ form.search_query.label }}</label>
+            {{ form.search_query }}
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
+            <div>
+                <label for="{{ form.programme.id_for_label }}" style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--brand-blue);">{{ form.programme.label }}</label>
+                {{ form.programme }}
+            </div>
+            <div>
+                <label for="{{ form.keywords.id_for_label }}" style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--brand-blue);">{{ form.keywords.label }}</label>
+                {{ form.keywords }}
+            </div>
+        </div>
+        
+        <div style="text-align: right;">
+            <button type="submit" class="btn" style="padding: 12px 30px; font-weight: 600; letter-spacing: 0.5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <i class="fas fa-search"></i> Launch Search
+            </button>
+        </div>
+    </form>
+</div>
+
+<style>
+    .filter-form .form-control {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background-color: #fbfbfb;
+    }
+    .filter-form .form-control:focus {
+        border-color: var(--brand-blue);
+        box-shadow: 0 0 0 3px rgba(0, 102, 179, 0.1);
+        outline: none;
+        background-color: #fff;
+    }
+    .search-section .form-control {
+        font-size: 1.1rem;
+    }
+</style>
+
+<!-- Affichage des appels de projet -->
+{% if calls %}
+    <h2 style="margin-top: 20px; margin-bottom: 15px;">Project Calls</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
+    {% for call in calls %}
+        <div class="card hover-card" style="margin-bottom: 0; display: flex; flex-direction: column;">
+            <h3 style="font-size: 1.25rem;">{{ call.nom_de_lappel }}</h3>
+            <p style="font-size: 0.9rem; color: #555; margin-bottom: 5px;">
+                <strong>Opening Date:</strong> {{ call.date_ouverture }}<br>
+                <strong>Deadline:</strong> <span style="color: var(--brand-red);">{{ call.date_limite }}</span>
+            </p>
+            <p style="font-size: 0.85rem; color: #888; flex-grow: 1;">
+                <strong>UID:</strong> {{ call.uid }}
+            </p>
+            <a href="{{ call.lien }}" target="_blank" class="btn" style="margin-top: 15px; width: 100%;">View Details</a>
+        </div>
+    {% endfor %}
+    </div>
+{% else %}
+    <div class="card" style="margin-top: 20px;">
+        <p>No calls found at the moment.</p>
+    </div>
+{% endif %}
+{% endblock %}

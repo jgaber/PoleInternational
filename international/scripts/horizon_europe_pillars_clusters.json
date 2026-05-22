@@ -1,0 +1,68 @@
+[
+  {
+    "pillar_code": "Pillar I",
+    "pillar_name": "Excellent Science",
+    "description": "Soutenir la recherche d’excellence, les chercheurs individuels et les infrastructures de recherche.",
+    "main_programmes": [
+      "ERC (European Research Council)",
+      "MSCA (Marie Skłodowska-Curie Actions)",
+      "Research Infrastructures"
+    ]
+  },
+  {
+    "pillar_code": "Pillar II",
+    "pillar_name": "Global Challenges & European Industrial Competitiveness",
+    "description": "Financer la recherche collaborative pour répondre aux grands défis sociétaux et renforcer la compétitivité industrielle de l’Europe.",
+    "clusters": [
+      {
+        "cluster_code": "Cluster 1",
+        "name": "Health",
+        "goal": "Améliorer la santé et le bien-être."
+      },
+      {
+        "cluster_code": "Cluster 2",
+        "name": "Culture, Creativity & Inclusive Society",
+        "goal": "Promouvoir les sociétés inclusives, démocratiques et culturelles."
+      },
+      {
+        "cluster_code": "Cluster 3",
+        "name": "Civil Security for Society",
+        "goal": "Renforcer la sécurité civile, la cybersécurité et la résilience face aux crises."
+      },
+      {
+        "cluster_code": "Cluster 4",
+        "name": "Digital, Industry & Space",
+        "goal": "Soutenir la transition numérique, l’industrie et l’exploration spatiale."
+      },
+      {
+        "cluster_code": "Cluster 5",
+        "name": "Climate, Energy & Mobility",
+        "goal": "Répondre aux défis climatiques, énergétiques et de mobilité durable."
+      },
+      {
+        "cluster_code": "Cluster 6",
+        "name": "Food, Bioeconomy, Natural Resources, Agriculture & Environment",
+        "goal": "Préserver les ressources naturelles et la biodiversité."
+      }
+    ]
+  },
+  {
+    "pillar_code": "Pillar III",
+    "pillar_name": "Innovative Europe",
+    "description": "Soutenir l’innovation de rupture et les écosystèmes d’innovation européens.",
+    "main_programmes": [
+      "EIC (European Innovation Council)",
+      "EIT (European Institute of Innovation and Technology)",
+      "European Innovation Ecosystems"
+    ]
+  },
+  {
+    "pillar_code": "Transversal",
+    "pillar_name": "Widening Participation & Strengthening the European Research Area (ERA)",
+    "description": "Réduire les disparités entre pays européens et renforcer l’Espace Européen de la Recherche.",
+    "main_programmes": [
+      "Widening Participation",
+      "ERA Policy Agenda"
+    ]
+  }
+]

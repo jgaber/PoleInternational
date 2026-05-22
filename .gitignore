@@ -1,0 +1,10 @@
+*.pyc
+*__pycache__*
+db.sqlite3
+/venv/
+.env
+/staticfiles/
+t.txt
+extract_colors.py
+extract_css.py
+fetch_design.py

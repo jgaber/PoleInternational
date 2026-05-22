@@ -1,0 +1,84 @@
+Nom de l'appel : Market Uptake Measures of renewable energy systems - Deadline 
+Date d'ouverture : 04/02/2025
+Date limite : 04/02/2025
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl5-2024-d3-02-10
+
+UID : 20240806T111605Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------
+Nom de l'appel : Robotics and other automated solutions for construction, renovation and maintenance in a sustainable built environment (Built4People Partnership) - Deadline 
+Date d'ouverture : 04/02/2025
+Date limite : 04/02/2025
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl5-2024-d4-02-02
+
+UID : 20240806T111541Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------
+Nom de l'appel : Quantum technologies - Deadline 
+Date d'ouverture : 05/11/2024
+Date limite : 05/11/2024
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/edf-2024-ls-ra-dis-quant-step
+
+UID : 20240806T111341Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------
+Nom de l'appel : Post-quantum cryptography transition - Deadline 
+Date d'ouverture : 20/11/2024
+Date limite : 20/11/2024
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl3-2024-cs-01-02
+
+UID : 20240806T111559Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------
+Nom de l'appel : Renewable Energy financing mechanisms multi technology - Deadline 
+Date d'ouverture : 04/03/2025
+Date limite : 04/03/2025
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/renewfm-2025-invest-multi
+
+UID : 20240806T111110Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------
+Nom de l'appel : Developing and deploying a network of quantum gravimeters in Europe - Deadline 
+Date d'ouverture : 18/09/2024
+Date limite : 18/09/2024
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl4-2024-digital-emerging-02-01
+
+UID : 20240806T111141Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------
+Nom de l'appel : Nanoelectronics for energy-efficient smart edge devices - Deadline 
+Date d'ouverture : 16/10/2024
+Date limite : 16/10/2024
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-eic-2024-pathfinderchallenges-01-04
+
+UID : 20240806T111124Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------
+Nom de l'appel : Stimulating transnational research and development of next generation quantum technologies, including basic theories and components (Cascading grant with FSTP) - Deadline 
+Date d'ouverture : 18/09/2024
+Date limite : 18/09/2024
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl4-2024-digital-emerging-02-02
+
+UID : 20240806T111143Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------
+Nom de l'appel : Electricity, Gas, Smart Grids, Hydrogen and CO₂ networks - Studies - Deadline 
+Date d'ouverture : 22/10/2024
+Date limite : 22/10/2024
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/cef-e-2024-pci-pmi-studies
+
+UID : 20240806T111135Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------
+Nom de l'appel : Electricity, Gas, Smart Grids, Hydrogen and CO₂ networks - Works - Deadline 
+Date d'ouverture : 22/10/2024
+Date limite : 22/10/2024
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/cef-e-2024-pci-pmi-works
+
+UID : 20240806T111136Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------
+Nom de l'appel : Advancing Large AI Models: Integration of New Data Modalities and Expansion of Capabilities (AI, Data and Robotics Partnership) (RIA) - Deadline 
+Date d'ouverture : 18/09/2024
+Date limite : 18/09/2024
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl4-2024-human-03-01
+
+UID : 20240806T111138Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------
+Nom de l'appel : Explainable and Robust AI (AI Data and Robotics Partnership) (RIA) - Deadline 
+Date d'ouverture : 18/09/2024
+Date limite : 18/09/2024
+Lien : https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl4-2024-human-03-02
+
+UID : 20240806T111139Z-FP7@wlmcl00612.cc.cec.eu.int
+----------------------------------------

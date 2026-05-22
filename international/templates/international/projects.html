@@ -1,0 +1,40 @@
+{% extends "international/base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Our Projects</h1>
+
+    <p style="margin-bottom: 30px;">
+        Below are the research project calls related to the expertise of our lab, <strong>FEMTO-ST</strong>, in fields such as 
+        photonics, renewable energy, hydrogen, artificial intelligence, and more.
+    </p>
+
+    <h2>{% if programme %}{{ programme }} Calls{% else %}All Calls{% endif %}</h2>
+</div>
+
+<!-- Liste des appels de projet -->
+{% if calls %}
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
+    {% for call in calls %}
+        <div class="card hover-card" style="margin-bottom: 0; display: flex; flex-direction: column;">
+            <h3 style="font-size: 1.25rem;">{{ call.nom_de_lappel }}</h3>
+            <p style="font-size: 0.9rem; color: #555; margin-bottom: 5px;">
+                <strong>Opening Date:</strong> {{ call.date_ouverture }}<br>
+                <strong>Deadline:</strong> <span style="color: var(--brand-red);">{{ call.date_limite }}</span>
+            </p>
+            <p style="font-size: 0.85rem; color: #888; flex-grow: 1;">
+                <strong>UID:</strong> {{ call.uid }}
+            </p>
+            <a href="{{ call.lien }}" target="_blank" class="btn" style="margin-top: 15px; width: 100%;">View Details</a>
+        </div>
+    {% endfor %}
+    </div>
+{% else %}
+    <div class="card">
+        <p>No Horizon calls found at the moment.</p>
+    </div>
+{% endif %}
+
+{% endblock %}
