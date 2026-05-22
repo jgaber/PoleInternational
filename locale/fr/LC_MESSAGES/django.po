@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-22 20:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Home"
+msgstr "Accueil"
+
+msgid "International Pole Platform"
+msgstr "Plateforme du Pôle International"
+
+msgid "Your centralized resource for navigating international research and academic opportunities at FEMTO-ST. This platform is designed to streamline your search for funding, collaborations, and mobility support."
+msgstr "Votre ressource centralisée pour naviguer parmi les opportunités de recherche et académiques internationales à FEMTO-ST. Cette plateforme est conçue pour simplifier votre recherche de financements, de collaborations et de soutien à la mobilité."
+
+msgid "Explore Our Resources"
+msgstr "Explorez Nos Ressources"
+
+msgid "Open Research Calls"
+msgstr "Appels à Projets Ouverts"
+
+msgid "Access a curated and updated list of international research opportunities. You can filter through various EU programs and research calls by scientific domain to find the perfect match for your expertise."
+msgstr "Accédez à une liste sélectionnée et mise à jour des opportunités de recherche internationales. Vous pouvez filtrer via divers programmes de l'UE et appels à projets par domaine scientifique pour trouver celui qui correspond à votre expertise."
+
+msgid "Browse Open Calls"
+msgstr "Parcourir les Appels Ouverts"
+
+msgid "Mobility Opportunities"
+msgstr "Opportunités de Mobilité"
+
+msgid "Find dedicated support for your international transitions. We provide details on Hubert Curien Partnerships (PHC), COST Action scientific missions, and various short-term mobility schemes for researchers and students."
+msgstr "Trouvez un soutien dédié pour vos transitions internationales. Nous fournissons des détails sur les Partenariats Hubert Curien (PHC), les missions scientifiques COST et divers programmes de mobilité de courte durée pour les chercheurs et les étudiants."
+
+msgid "View Mobility Schemes"
+msgstr "Voir les Programmes de Mobilité"
+
+msgid "Strategic Toolkits"
+msgstr "Boîtes à Outils Stratégiques"
+
+msgid "Utilize specialized toolkits for international cooperation. From the CNRS cooperation guide to the ANR international project framework, we consolidate the essential documentation for successful global partnerships."
+msgstr "Utilisez des boîtes à outils spécialisées pour la coopération internationale. Du guide de coopération du CNRS au cadre de projet international de l'ANR, nous regroupons la documentation essentielle pour des partenariats mondiaux réussis."
+
+msgid "Access Toolkits"
+msgstr "Accéder aux Boîtes à Outils"
+
+msgid "What this platform provides"
+msgstr "Ce que cette plateforme apporte"
+
+msgid "The International Pole website serves as a bridge between researchers and the global scientific community. Here is a breakdown of what you can achieve on this platform:"
+msgstr "Le site du Pôle International sert de pont entre les chercheurs et la communauté scientifique mondiale. Voici un aperçu de ce que vous pouvez accomplir sur cette plateforme :"
+
+msgid "Funding Intelligence"
+msgstr "Intelligence de Financement"
+
+msgid "Direct links to the EU Funding & Tenders Portal and specific scholarship programs for Master and PhD students, ensuring you never miss a financial opportunity."
+msgstr "Liens directs vers le portail de financement et d'appels d'offres de l'UE et programmes de bourses spécifiques pour les étudiants de Master et Doctorat, pour ne jamais manquer une opportunité financière."
+
+msgid "Expert Guidance"
+msgstr "Accompagnement d'Experts"
+
+msgid "Step-by-step information on institutional processes, including CNRS campaigns, AUF calls, and Horizon Europe pillar structures."
+msgstr "Informations étape par étape sur les processus institutionnels, y compris les campagnes du CNRS, les appels de l'AUF et les structures des piliers d'Horizon Europe."
+
+msgid "Centralized Networking"
+msgstr "Mise en Réseau Centralisée"
+
+msgid "A single entry point to contact our dedicated international support team for personalized assistance with your projects and applications."
+msgstr "Un point d'entrée unique pour contacter notre équipe de soutien international dédiée pour une assistance personnalisée sur vos projets et candidatures."
+
+msgid "Need Personalized Assistance?"
+msgstr "Besoin d'une Assistance Personnalisée ?"
+
+msgid "Our team is available to guide you through complex application processes and international regulations."
+msgstr "Notre équipe est disponible pour vous guider à travers les processus de candidature complexes et les réglementations internationales."
+
+msgid "Contact the International Pole"
+msgstr "Contacter le Pôle International"
