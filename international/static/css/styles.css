@@ -244,27 +244,47 @@ a:hover {
     z-index: 10;
 }
 
-/* Language Switcher */
-.language-switcher {
-    margin: 25px 15px 10px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+/* Language Switcher (Top Right) */
+.top-language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    z-index: 2000;
 }
 
-.language-switcher select {
-    width: 100%;
-    padding: 8px;
-    background-color: var(--sidebar-hover-bg);
-    color: white;
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 4px;
+.lang-options {
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     transition: all 0.3s ease;
 }
 
-.language-switcher select:hover {
-    border-color: var(--brand-red);
+.lang-btn:hover {
+    background-color: #f8f9fa;
+    color: var(--brand-red);
+}
+
+.lang-btn.active {
+    background-color: var(--brand-red);
+    color: white;
 }
 
 /* Hero Section */
