@@ -10,23 +10,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Language Switcher (Top Right) -->
-        <div class="top-language-switcher">
-            {% get_current_language as LANGUAGE_CODE %}
-            <form action="{% url 'set_language' %}" method="post" id="lang-form">
-                {% csrf_token %}
-                <input name="next" type="hidden" value="{{ request.get_full_path }}">
-                <div class="lang-options">
-                    <button type="submit" name="language" value="en" class="lang-btn {% if LANGUAGE_CODE == 'en' %}active{% endif %}">
-                        🇬🇧 EN
-                    </button>
-                    <button type="submit" name="language" value="fr" class="lang-btn {% if LANGUAGE_CODE == 'fr' %}active{% endif %}">
-                        🇫🇷 FR
-                    </button>
-                </div>
-            </form>
-        </div>
-
         <!-- Vertical Menu -->
         <nav class="sidebar">
             <div class="brand-header">
@@ -34,6 +17,24 @@
                     <img src="https://www.femto-st.fr/themes/custom/femto/logo.svg" alt="FEMTO-ST Logo" class="brand-logo">
                 </a>
             </div>
+
+            <!-- Language Switcher (Inside Sidebar) -->
+            <div class="sidebar-language-switcher">
+                {% get_current_language as LANGUAGE_CODE %}
+                <form action="{% url 'set_language' %}" method="post" id="lang-form">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ request.get_full_path }}">
+                    <div class="lang-options">
+                        <button type="submit" name="language" value="en" class="lang-btn {% if LANGUAGE_CODE == 'en' %}active{% endif %}">
+                            🇬🇧 EN
+                        </button>
+                        <button type="submit" name="language" value="fr" class="lang-btn {% if LANGUAGE_CODE == 'fr' %}active{% endif %}">
+                            🇫🇷 FR
+                        </button>
+                    </div>
+                </form>
+            </div>
+
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about/">About</a></li>
