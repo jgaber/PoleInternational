@@ -244,6 +244,29 @@ a:hover {
     z-index: 10;
 }
 
+/* Language Switcher */
+.language-switcher {
+    margin: 25px 15px 10px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.language-switcher select {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--sidebar-hover-bg);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.language-switcher select:hover {
+    border-color: var(--brand-red);
+}
+
 /* Hero Section */
 .hero-section {
     padding: 60px 40px;

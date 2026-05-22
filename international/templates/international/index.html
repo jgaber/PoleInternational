@@ -1,55 +1,56 @@
 {% extends 'international/base.html' %}
+{% load i18n %}
 
-{% block title %}Home{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
 
 {% block content %}
 <section class="hero-section">
-    <h1>International Pole Platform</h1>
-    <p>Your centralized resource for navigating international research and academic opportunities at FEMTO-ST. This platform is designed to streamline your search for funding, collaborations, and mobility support.</p>
+    <h1>{% trans "International Pole Platform" %}</h1>
+    <p>{% trans "Your centralized resource for navigating international research and academic opportunities at FEMTO-ST. This platform is designed to streamline your search for funding, collaborations, and mobility support." %}</p>
 </section>
 
-<h2 class="section-title">Explore Our Resources</h2>
+<h2 class="section-title">{% trans "Explore Our Resources" %}</h2>
 <div class="grid">
     <div class="card hover-card">
-        <h3>Open Research Calls</h3>
-        <p>Access a curated and updated list of international research opportunities. You can filter through various EU programs and research calls by scientific domain to find the perfect match for your expertise.</p>
-        <a href="/EU-research-call/">Browse Open Calls &rarr;</a>
+        <h3>{% trans "Open Research Calls" %}</h3>
+        <p>{% trans "Access a curated and updated list of international research opportunities. You can filter through various EU programs and research calls by scientific domain to find the perfect match for your expertise." %}</p>
+        <a href="/EU-research-call/">{% trans "Browse Open Calls" %} &rarr;</a>
     </div>
     <div class="card hover-card">
-        <h3>Mobility Opportunities</h3>
-        <p>Find dedicated support for your international transitions. We provide details on Hubert Curien Partnerships (PHC), COST Action scientific missions, and various short-term mobility schemes for researchers and students.</p>
-        <a href="{% url 'external_link_info' 'short-term-mobility' %}">View Mobility Schemes &rarr;</a>
+        <h3>{% trans "Mobility Opportunities" %}</h3>
+        <p>{% trans "Find dedicated support for your international transitions. We provide details on Hubert Curien Partnerships (PHC), COST Action scientific missions, and various short-term mobility schemes for researchers and students." %}</p>
+        <a href="{% url 'external_link_info' 'short-term-mobility' %}">{% trans "View Mobility Schemes" %} &rarr;</a>
     </div>
     <div class="card hover-card">
-        <h3>Strategic Toolkits</h3>
-        <p>Utilize specialized toolkits for international cooperation. From the CNRS cooperation guide to the ANR international project framework, we consolidate the essential documentation for successful global partnerships.</p>
-        <a href="{% url 'external_link_info' 'cooperation-toolkit' %}">Access Toolkits &rarr;</a>
+        <h3>{% trans "Strategic Toolkits" %}</h3>
+        <p>{% trans "Utilize specialized toolkits for international cooperation. From the CNRS cooperation guide to the ANR international project framework, we consolidate the essential documentation for successful global partnerships." %}</p>
+        <a href="{% url 'external_link_info' 'cooperation-toolkit' %}">{% trans "Access Toolkits" %} &rarr;</a>
     </div>
 </div>
 
-<h2 class="section-title">What this platform provides</h2>
+<h2 class="section-title">{% trans "What this platform provides" %}</h2>
 <div class="card">
-    <p>The International Pole website serves as a bridge between researchers and the global scientific community. Here is a breakdown of what you can achieve on this platform:</p>
+    <p>{% trans "The International Pole website serves as a bridge between researchers and the global scientific community. Here is a breakdown of what you can achieve on this platform:" %}</p>
     
     <div class="grid" style="margin-top: 30px;">
         <div style="padding: 10px;">
-            <h4 class="highlight">Funding Intelligence</h4>
-            <p>Direct links to the EU Funding & Tenders Portal and specific scholarship programs for Master and PhD students, ensuring you never miss a financial opportunity.</p>
+            <h4 class="highlight">{% trans "Funding Intelligence" %}</h4>
+            <p>{% trans "Direct links to the EU Funding & Tenders Portal and specific scholarship programs for Master and PhD students, ensuring you never miss a financial opportunity." %}</p>
         </div>
         <div style="padding: 10px;">
-            <h4 class="highlight">Expert Guidance</h4>
-            <p>Step-by-step information on institutional processes, including CNRS campaigns, AUF calls, and Horizon Europe pillar structures.</p>
+            <h4 class="highlight">{% trans "Expert Guidance" %}</h4>
+            <p>{% trans "Step-by-step information on institutional processes, including CNRS campaigns, AUF calls, and Horizon Europe pillar structures." %}</p>
         </div>
         <div style="padding: 10px;">
-            <h4 class="highlight">Centralized Networking</h4>
-            <p>A single entry point to contact our dedicated international support team for personalized assistance with your projects and applications.</p>
+            <h4 class="highlight">{% trans "Centralized Networking" %}</h4>
+            <p>{% trans "A single entry point to contact our dedicated international support team for personalized assistance with your projects and applications." %}</p>
         </div>
     </div>
 </div>
 
 <div class="card" style="background-color: #f8f9fa; border-top: none; text-align: center;">
-    <h3>Need Personalized Assistance?</h3>
-    <p>Our team is available to guide you through complex application processes and international regulations.</p>
-    <a href="/contacts/" class="btn">Contact the International Pole</a>
+    <h3>{% trans "Need Personalized Assistance?" %}</h3>
+    <p>{% trans "Our team is available to guide you through complex application processes and international regulations." %}</p>
+    <a href="/contacts/" class="btn">{% trans "Contact the International Pole" %}</a>
 </div>
 {% endblock %}

@@ -44,6 +44,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware', # ADD THIS
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -105,26 +106,24 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
+from django.utils.translation import gettext_lazy as _
+
 LANGUAGE_CODE = 'en-us'
 
-# TIME_ZONE = 'UTC'
 TIME_ZONE = 'Europe/Paris'
+
 USE_I18N = True
-USE_L10N = True  # Activer la localisation
+USE_L10N = True
 USE_TZ = True
 
-""" LANGUAGE_CODE = 'fr'  # Langue par défaut : Français
-TIME_ZONE = 'Europe/Paris'  # Fuseau horaire par défaut
-
-USE_I18N = True  # Activer l'internationalisation
-USE_L10N = True  # Activer la localisation
-USE_TZ = True    # Activer la gestion des fuseaux horaires
-
 LANGUAGES = [
-    ('fr', 'Français'),  # Français
-    ('en', 'English'),   # Anglais
+    ('en', _('English')),
+    ('fr', _('French')),
 ]
- """
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
 
 
 # Static files (CSS, JavaScript, Images)
