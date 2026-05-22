@@ -243,3 +243,67 @@ a:hover {
     border-top-color: var(--brand-red);
     z-index: 10;
 }
+
+/* Hero Section */
+.hero-section {
+    padding: 60px 40px;
+    background: linear-gradient(135deg, var(--sidebar-bg) 0%, #343a40 100%);
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    opacity: 0.9;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: var(--brand-red);
+    opacity: 0.1;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Grid System */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Feature Icon Placeholder */
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.highlight {
+    color: var(--brand-red);
+    font-weight: 600;
+}

@@ -3,8 +3,53 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+<section class="hero-section">
+    <h1>Your Gateway to Global Research Excellence</h1>
+    <p>Connecting international talent with world-class research opportunities at FEMTO-ST. Discover everything you need to know about planning your research journey, from application to life in Besançon.</p>
+</section>
+
+<h2 class="section-title">Why choose FEMTO-ST for your international journey?</h2>
+<div class="grid">
+    <div class="card hover-card">
+        <span class="feature-icon">🌍</span>
+        <h3>Global Reputation</h3>
+        <p>Join one of France's leading research institutes in engineering and sciences, recognized worldwide for innovation in micro-technology and applied science.</p>
+    </div>
+    <div class="card hover-card">
+        <span class="feature-icon">🤝</span>
+        <h3>Supporting Your Success</h3>
+        <p>From visa guidance to language support, our International Pole provides dedicated assistance to help you adjust to life in France and thrive in your career.</p>
+    </div>
+    <div class="card hover-card">
+        <span class="feature-icon">💡</span>
+        <h3>Cutting-edge Facilities</h3>
+        <p>Access state-of-the-art laboratories and work alongside international experts on high-impact projects that define the future of technology.</p>
+    </div>
+</div>
+
+<h2 class="section-title">Everything you need to get started</h2>
 <div class="card">
-    <h1>Welcome to the International Pole</h1>
-    <p>This is the home page. Navigate through the menu to find relevant information.</p>
+    <p>Discover everything you need to know as an international student or researcher planning to join us. Whether you're coming for the first time, returning for postgraduate work, or exploring project collaborations, our guidance below can help you prepare.</p>
+    
+    <div class="grid" style="margin-top: 30px;">
+        <div style="padding: 10px;">
+            <h4 class="highlight">1. Research Opportunities</h4>
+            <p>Explore current <a href="/EU-research-call/">EU Research Calls</a> and <a href="{% url 'external_link_info' 'cnrs-call' %}">CNRS International</a> programs. Use our specialized filters to find the domain that matches your expertise.</p>
+        </div>
+        <div style="padding: 10px;">
+            <h4 class="highlight">2. Admin & Logistics</h4>
+            <p>Get top tips on <a href="{% url 'external_link_info' 'eu-funding-portal' %}">funding portals</a>, <a href="{% url 'external_link_info' 'scholarships' %}">scholarships</a>, and visa requirements to make your transition as smooth as possible.</p>
+        </div>
+        <div style="padding: 10px;">
+            <h4 class="highlight">3. Life in Besançon</h4>
+            <p>Learn about <a href="{% url 'external_link_info' 'short-term-mobility' %}">mobility schemes</a> and adjusting to life in France as an international student. Discover the vibrant student life and culture of the region.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card" style="background-color: #f8f9fa; border-top: none; text-align: center;">
+    <h3>Need dedicated support?</h3>
+    <p>Our team is here to help you navigate every step of your international application.</p>
+    <a href="/contacts/" class="btn">Get in touch</a>
 </div>
 {% endblock %}
